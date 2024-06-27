@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 80px;
+}
+
+#form-section, #services-section {
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+}
+
+.service-item h3 {
+    color: #333;
+}
+
+
+/* Dropdown styles */
+.dropdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: inline-block;
+}
+
+.dropdown {
+    flex: 1;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Modify select styles for better appearance */
+.dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 24px;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header{
+    z-index: 999;
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.5s ease;
+    background: rgb(74, 55, 35);
+  }
+  
+  header .logo{
+    color: #F4F1ED;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-decoration:none;
+  }
+  
+  header .navigation{
+  position: relative;
+  color: #4a3723;
+  }
+  
+  
+  
+  header .navigation_items a{
+    position: relative;
+    color: #F4F1ED;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.5s ease;
+  
+  }
+  header .navigation_items a:before{
+    content: '';
+    position: absolute;
+    background: #F4F1ED;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  header .navigation_items a:hover:before{
+    width: 100%;
+  }
+  
+  header .btn1{
+    position: relative;
+    color: #4a3723;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 10px 15px;
+    background-color: #F4F1ED;
+    cursor: pointer;
+  }
+  header .btn1:hover{
+    color:#F4F1ED;
+    background: rgb(145, 113, 60);
+    transition: 0.3s ease;
+  }
+  .menu-btn .fas{
+    display: none;
+  }
+  .cancel-btn .fas{
+    display: none;
+  }
+  
+  .footer{
+    background-color:#4a3723;
+    color: #F4F1ED;
+    width: 100%;
+    height: 10vh;
+    padding: 4% 0;
+  }
+  .footer__socials {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer__socials span a {
+    font-size: 1.5rem;
+    color:#F4F1ED;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .footer__socials span a:hover {
+    color:#91713c;
+  }
+  .footer__nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer__bar {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #F4F1ED ;
+  }
+

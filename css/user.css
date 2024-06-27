@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.profile-dashboard {
+    max-width: 800px; /* Maximum width for the dashboard */
+    margin: 20px auto; /* Center the dashboard */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.profile-header {
+    text-align: center; /* Center the header */
+    border-bottom: 1px solid #ddd; /* Bottom border for separation */
+    padding-bottom: 10px;
+}
+
+.profile-info {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly */
+    padding-top: 20px;
+}
+
+.trips-info {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.profile-section {
+    flex: 1; /* Make sections take equal space */
+    padding: 10px; /* Add padding inside sections */
+}
+
+h1 {
+    font-size: 24px; /* Font size for main heading */
+    color: #333; /* Dark gray text color */
+}
+
+h2 {
+    font-size: 18px; /* Font size for subheadings */
+    color: #555; /* Medium gray text color */
+}
+
+p {
+    color: #777; /* Lighter gray for text */
+}
+
+ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px; /* Padding for bullet alignment */
+}
+
+li {
+    color: #555; /* Medium gray for list items */
+}

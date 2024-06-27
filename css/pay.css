@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+h1 {
+    text-align: center;
+    color: black; /* Dark text for titles */
+}
+
+.payment-instructions {
+    text-align: center;
+    padding: 20px;
+}
+
+.payment-section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.bkash-section {
+    background-color: #d12053; /* Light pink for bKash section */
+}
+
+.nagad-section {
+    background-color: #f6921e; /* Light orange for Nagad section */
+}
+
+h2 {
+    color: #ffffff; /* Dark text for headings */
+}
+
+#bkash-number {
+    color: white; /* bKash red */
+}
+
+#nagad-number {
+    color: white; /* Nagad orange */
+}
+
+#payment-form {
+    text-align: center;
+    font-weight: 600;
+}
+
+label {
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+select,
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745; /* Green for submit button */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#confirmation-message {
+    text-align: center;
+    padding: 10px;
+}
+
+#confirmation-message.success {
+    color: green; /* Green for success messages */
+}
+
+#confirmation-message.error {
+    color: red; /* Red for error messages */
+}
