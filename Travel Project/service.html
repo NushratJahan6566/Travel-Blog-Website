@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <script src="https://kit.fontawesome.com/2be1af60ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+    <header>
+        <a href="hp.php" class="logo">দিগন্ত পেরিয়ে</a>
+        <div class="navigation">
+          <nav class="navigation_items">
+            <!-- <a href="#home">Home</a> -->
+            <a href="hp.php">আমাদের পরিচয়</a>
+            <a href="package.html">আমাদের প্যাকেজ</a>
+            <a href="booking.html">আমাদের সেবা সমূহ</a>
+            <a href="blog.html">অনুপ্রেরণা</a>
+            <a href="contactus.php"> যোগাযোগ </a>
+            <a href="service.html"><button class="btn1"> বুকিং করুন </button></a>
+            <!-- <a href="index.php" ><i class="fa-solid fa-user" style="color: #f4f1ed;"></i></a> -->
+          </nav>
+    
+        </div>
+      </header>
+    <main>
+        <section id="form-section">
+            <h2>আমাদের সেবা বুক করুন</h2>
+            <form id="tourist-form" method="post" action="form_connect.php">
+                <label for="name">নাম:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">ইমেইল:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="number">ফোন নম্বর:</label>
+                <input type="tel" id="number" name="number" required>
+
+                <label for="departure-date">আপনি কখন চলে যেতে চান?</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+
+                <label for="trip-type">আপনি কোন ধরনের ট্রিপের কথা ভাবছেন?</label>
+                <select id="trip-type" name="trip-type">
+                    <option value="business">ব্যবসায়ীক</option>
+                    <option value="pleasure">আনন্দদায়ক</option>
+                    <option value="other">অন্যান্য</option>
+                </select>
+
+                <div class="dropdown-container">
+                    <label for="destination">গন্তব্য নির্বাচন করুন</label>
+                    <div class="destination" name="destination">
+                        <select id="destination" name="destination">
+                            <option value="">গন্তব্য নির্বাচন করুন</option>
+                            <option value="Nikli Haor"> নিকলী হাওর</option>
+                            <option value="shatgombuj Mosque">ষাটগম্বুজ মসজিদ</option>
+                            <option value="jaflong">জাফলং</option>
+                            <option value="sundarban">সুন্দরবন</option>
+                            <option value="coxsbazar">কক্সবাজার</option>
+                            <option value="sajek valley">সাজেক ভ্যালি</option>
+                        </select>
+                    </div>
+
+
+                    <div id="package" class="dropdown">
+                        <select id="package" name="package">
+                            <option value="">প্যাকেজ নির্বাচন করুন</option>
+                            <option value="Package 01 (5K BDT)">প্যাকেজ ০১(৫,০০০ টাকা)</option>
+                            <option value="Package 02 (3.5K BDT)">প্যাকেজ ০২(৩,০০০ টাকা)</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="package.html" style=" color: #4a3723"> প্যাকেজগুলোর বিস্তারিত দেখুন</a><br>
+
+                <label for="hear">আপনি কিভাবে আমাদের সম্বন্ধে শুনেছো?</label>
+                <input type="text" id="hear" name="hear">
+                <!-- popup page for transaction -->
+
+                <a href="#" id="popupLink" style=" color: #4a3723"> লেনদেনের তথ্য দেখুন </a><br>
+                <div class="popup" id="popup">
+                    <span class="close" id="closePopup">&times;</span>
+                    <h2>Tলেনদেন নম্বর</h2>
+                    <p>বিকাশ:০১৭××××××××</p>
+                    <p>নগদ:০১৮××××××××</p>
+                </div>
+                <style>
+                    
+                    .popup {
+                        display: none;
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: #fff;
+                        padding: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                        z-index: 1000;
+                    }
+                    .overlay {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        z-index: 999;
+                    }
+                    .close {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        cursor: pointer;
+                    }
+                </style>
+
+
+
+<!-- transaction -->
+                <br><label for="transaction">আপনার লেনদেন আইডি জমা দিন</label>
+                <input type="text" id="transaction" name="transaction" required>
+
+
+                <button type="submit" name="submit">বুকিং করুন</button>
+            </form>
+        </section>
+        
+    </main>
+    
+    <section class="footer">
+        <div class="footer__socials">
+            <span>
+                <a href="https://www.facebook.com/index.php/"><i class="fa-brands fa-facebook"></i></a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            </span>
+            <span>
+                <a href="https://www.bing.com/ck/a?!&&p=58309769a115c705JmltdHM9MTcxNTIxMjgwMCZpZ3VpZD0wNGE1MDNjZC1kZDQ4LTZmN2MtMGUzOS0xN2RlZGNkMzZlOGYmaW5zaWQ9NTIwNA&ptn=3&ver=2&hsh=3&fclid=04a503cd-dd48-6f7c-0e39-17dedcd36e8f&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1"><i class="fa-brands fa-twitter"></i></a>
+            </span>
+            <span>
+                <a href="https://www.bing.com/ck/a?!&&p=dbe1e1ebf616ea53JmltdHM9MTcxNTIxMjgwMCZpZ3VpZD0wNGE1MDNjZC1kZDQ4LTZmN2MtMGUzOS0xN2RlZGNkMzZlOGYmaW5zaWQ9NTIwMQ&ptn=3&ver=2&hsh=3&fclid=04a503cd-dd48-6f7c-0e39-17dedcd36e8f&psq=linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tLw&ntb=1"><i class="fa-brands fa-linkedin"></i></a>
+            </span>
+        </div>
+        <div class="footer__bar">
+            কপিরাইট © ২০২৪ দিগন্ত পেরিয়ে। সর্বস্বত্ব সংরক্ষিত
+            </div>
+    </section>
+    <script>
+        function displayPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+    
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    
+        document.getElementById('popupLink').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            displayPopup();
+        });
+    
+        document.getElementById('closePopup').addEventListener('click', function(event) {
+            closePopup();
+        });
+    
+        document.getElementById('overlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closePopup();
+            }
+        });
+    </script>
+    <!-- <script src="js/script1.js"></script> -->
+</body>
+</html>
